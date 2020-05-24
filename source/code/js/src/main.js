@@ -1,2 +1,8 @@
 // main.js
 
+(function($){
+
+
+
+
+})(jQuery);
