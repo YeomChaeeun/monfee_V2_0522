@@ -29,6 +29,7 @@
   bestNewsBox.css({width:'940px',backgroundColor:'transparent'});
 
   // ---------------------------------------
+  // 배열 객체
   var gnbArr = [
     {title : 'story', // gnbArr[0].title
     subList : [       // gnbArr[0].subList
@@ -37,9 +38,9 @@
     // gnbArr[0].subList[1].linkName, gnbArr[0].subList[1].link
     {linkName : '회사소개', link : 'aboutCompany.html'},
     {linkName : '후원업체', link : 'sponCompany.html'}
-  ]},
-  {title : 'menu',  // gnbArr[1].title
-  subList : [
+    ]},
+    {title : 'menu',  // gnbArr[1].title
+    subList : [
     // gnbArr[1].subList[0].linkName, gnbArr[1].subList[0].link
       {linkName : '커피류', link : 'storyMonfee.html'},
       {linkName : '기타음료', link : 'aboutCompany.html'},
