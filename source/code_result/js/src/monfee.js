@@ -15,7 +15,7 @@
   var headBoxH = headBox.css('height');
   var headBoxBg = headBox.css('backgroundColor');
 
-  headBoxWrap.css({width:'100%',height:headBoxH,backgroundColor:headBoxBg,position:'fixed',top:0,left:0,zIndex:1000,boxShadow: '0.2rem 0.2rem 0.2rem rgba(55, 55, 55, 0.7)'});
+  headBoxWrap.css({width:'100%',height:headBoxH,backgroundColor:headBoxBg,position:'fixed',top:0,left:0,zIndex:1000});
   headBox.css({maxWidth:'940px',margin:'auto',backgroundColor:'transparent'});
 
 
