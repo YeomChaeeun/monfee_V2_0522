@@ -1,8 +1,0 @@
-// main.js
-
-(function($){
-
-
-
-
-})(jQuery);
