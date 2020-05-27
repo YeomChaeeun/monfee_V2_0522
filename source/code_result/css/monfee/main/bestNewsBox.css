@@ -1,8 +1,103 @@
 /* bestNewsBox.css */
 
 #bestNewsBox{
-  width: 100%; height: auto; 
-  min-height: 800px;
-  margin: auto; 
-  background-color: #ddd;
+	width:940px; height:auto;
+	min-height:800px;
+	margin:auto; padding-top:185px; padding-bottom:200px;
+}
+
+#bestNewsBox h2{
+	width: 100%; height: 40px;
+	margin-bottom:40px;
+	color:#a30; font-size:2.3rem;
+	text-decoration:underline;
+	text-decoration-color:#0ac;
+	/* -webkit-text-underline-offset: 1em;
+	-moz-text-underline-offset: 1em;
+	-ms-text-underline-offset: 1em;
+	-o-text-underline-offset: 1em;
+	text-underline-offset: 1em; */
+}
+
+
+#bestNewsBox>ul:after{
+	content:" ";
+	display: block;
+	display: block;
+}
+
+#bestNewsBox li{
+	float:left;
+	width:220px; height: 400px;
+	margin-bottom:60px; margin-right:20px;
+}
+#bestNewsBox li:nth-child(4n){
+	margin-right: 0;
+}
+
+/* #bestNewsBox li:nth-last-child(n):nth-last-child(-n+4){
+	margin-bottom:0;
+} */
+
+#bestNewsBox a {
+	display: block; 
+	width: 100%; height: 100%;
+}
+
+.img_bg {
+	position: relative;
+	width: 100%; height: 260px;
+	border-radius:0.2rem;
+}
+
+#bestNewsBox a .img_bg:before {
+ content:" "; display: block;
+ position: absolute; top:0; left:0; width: 100%; height: 100%; 
+ width: 100%; height: 100%; background-color: rgba(170, 51,0, 0);
+ transition:background 300ms linear;
+}
+
+#bestNewsBox a:hover .img_bg:before, 
+#bestNewsBox a:focus .img_bg:before{
+	background-color: rgba(170, 51,0, 0.7);
+}
+
+#bestNewsBox a .img_bg:after{
+	content:" "; display: block;
+	 width: 100%; height: 100%;
+	 position: absolute; top:0; left: 0;
+	 background-image: url('../../../img/monfee/new_menu/menu_on.png');
+	 background-repeat: no-repeat;
+	 background-position: 50% 300%;
+	 background-size: 100% auto;
+	 transition:all 200ms linear 100ms;
+	 opacity: 0;
+} 
+
+#bestNewsBox a:hover .img_bg:after,
+#bestNewsBox a:focus .img_bg:after{
+	opacity: 1; background-position-y:-50%;
+}
+
+#bestNewsBox dl{
+	width:100%; height:140px;
+	padding:10px; box-sizing: border-box;
+}
+
+#bestNewsBox dt{
+	width: 100%; height:auto;
+	margin-bottom: 5px;
+	font-size:1.2rem;
+	font-weight: bold;1
+}
+#bestNewsBox dd{
+	width: 100%; height:auto;
+	font-size:0.875rem;
+	color:#656565;
+	line-height:1.1rem;
+	/* word-break:keep-all; */
+	word-break:break-all;
+	word-wrap:break-word;
+	/* white-space: nowrap; */
+	text-align:justify;
 }

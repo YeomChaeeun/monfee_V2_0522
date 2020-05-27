@@ -1,9 +1,7 @@
 /* issueBox.css */
-
-#issueBox{
-  width: 100%; height: auto;
-  min-height: 1000px;
-  margin: auto;
-  background-color: #ccc;
-}
-
+ #issueBox {
+	 width: 100%; height:auto;
+	 min-height:1000px;
+	 margin:auto;
+	 background-color: #aca;
+ }

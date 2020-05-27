@@ -5,12 +5,8 @@
 
 @import url('./main/adBannerBox.css');
 @import url('./main/bestNewsBox.css');
-@import url('./main/IssueBox.css');
+@import url('./main/issueBox.css');
 @import url('./main/contentBox.css');
-@import url('./main/lacationBox.css');
+@import url('./main/locationBox.css');
 
 @import url('./common/monfeeFootBox.css');
-
-
-
-
