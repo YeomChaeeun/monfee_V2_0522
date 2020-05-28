@@ -61,8 +61,7 @@
 	width: 55%; min-width: 73.2421875%;
 	height: 100%; 
 	margin: auto;
-	background-color: #777;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 .material_area ul{
 	width: 150%; height: 100%;
@@ -71,7 +70,6 @@
 	float: left;
 	width: 10vw; height: 120px;
 	margin-left: 5vw;
-	background-color: #caa;
 }
 .material_area li:first-child{
 	margin-left: 1vw;
