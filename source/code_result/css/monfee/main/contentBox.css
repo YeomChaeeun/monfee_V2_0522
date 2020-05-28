@@ -1,85 +1,127 @@
-/* contentBox.css */
+/* contentBox.css */ 
 #contentBox{
 	position: relative;
 	width: 100%; height:auto;
 	min-height:800px;
 	/* background-color: #ccc; */
-	background-image: url('../../../../img/black_board.png');
+	background-image: url('../../../img/monfee/black_board.png');
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
+
 .content_text{
-	width: 940px; height: 340px;
-	padding-top: 140px; padding-bottom: 110px; 
-	margin: auto;
-	color: #fff;
+	width:940px; height:340px;
+	padding-top:140px; padding-bottom:110px;
+	margin:auto;
+	color:#fff;
 	text-align: center;
 }
 .content_text h3{
 	font-size: 4.8125rem;
 	text-transform: uppercase;
-	margin-bottom: 50px;
+	margin-bottom:50px;
 }
 .content_text p{
-	font-size: 1.2rem;
+	font-size:1.2rem;
 	text-align: justify;
 }
 
 .material_icon{
-	position: absolute; bottom: 0;
+	position:absolute; bottom: 0;
 	width: 100%; height: 200px;
 	background-color: #a30;
-	padding: 40px 0;
+	padding:40px 0;
 	box-sizing: border-box;
 }
 
 .material_btn{
-	position: absolute; top: 50%; left: 0 ; right: 0;  z-index: 100;
-	margin: auto;
-	margin-top: -60px;
-	width: 85%; min-width: 945px; height: 0;
+	z-index:100;
+	position: absolute; top:50%; left:0; right:0; margin:auto;
+	margin-top:-60px;
+
+	width: 85%; min-width:945px; height: 0;	
 }
+
 .material_btn button{
-	width: 60px; height: 120px;
+	width:60px; height:120px;
 	background-image: url('../../../../img/material/material_btn.png');
 	background-repeat: no-repeat;
 }
 .material_btn .next{
-	float: right;
-	background-position-x: 100%;
+	float:right;
+	background-position-x:100%;
 }
 .material_btn .prev{
-	float: left;
-	background-position-x: 0;
-}
-.material_btn button:hover,
-.material_btn button:focus{
-	background-position-y: 100%;
+	float:left;
+	background-position-x:0;
 }
 
-.material_area{
-	width: 55%; min-width: 73.2421875%;
-	height: 100%; 
-	margin: auto;
+.material_btn button:hover,
+.material_btn button:focus{
+	background-position-y:100%;
+}
+
+.material_area {
+	width: 55%; min-width:73.2421875%;
+	height:100%; 
+	margin:auto;
 	overflow: hidden;
 }
 .material_area ul{
-	width: 150%; height: 100%;
+	width:120%; height:100%;
 }
+
 .material_area li{
-	float: left;
+	float:left;
 	width: 10vw; height: 120px;
-	margin-left: 5vw;
+	margin-left:5vw;
+	border-radius:3.75rem;
+	border:2px solid #fff;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 .material_area li:first-child{
-	margin-left: 1vw;
+	margin-left:1vw;
 }
+
 .material_area a{
+	/* background-image: url('../../../img/monfee/material/material_icon.png'); */
+	position: relative;
+	background-repeat: no-repeat;
+	/* overflow: hidden;	 */
+}
+.material_area a:hover{filter:drop-shadow(0.2rem 0.2rem 0.5rem #171717);}
+.material_area a:focus,{ background-color: #565656; }
+
+.material_area a>div{
+	position: absolute; left: 50%; top: 50%;
+	width: 1100px; height: 618px;
+}
+
+.mat_img{display:block;
+	position: relative; top: 0; left: 0;
+	width: 1100px; height: 681px;
+	/* background-image:linear-gradient(45deg, #0af, #fca, #afc, #f05); */
 	background-image: url('../../../../img/material/material_icon.png');
 	background-repeat: no-repeat;
 }
 
+.mat_01 .mat_img{ left: calc(70 / 1100 * -100%); top:calc(70 / 680 * -100%);}
+.mat_02 .mat_img{ left: calc(310 / 1100 * -100%); top:calc(70 / 680 * -100%);}
+.mat_03 .mat_img{ left: calc(550 / 1100 * -100%); top:calc(70 / 680 * -100%);}
+.mat_04 .mat_img{ left: calc(790 / 1100 * -100%); top:calc(70 / 680 * -100%);}
+.mat_05 .mat_img{ left: calc(1030 / 1100 * -100%); top:calc(70 / 680 * -100%);}
 
+.mat_06 .mat_img{ left: calc(70 / 1100 * -100%); top:calc(205 / 680 * -100%);}
+.mat_07 .mat_img{ left: calc(310 / 1100 * -100%); top:calc(205 / 680 * -100%);}
+.mat_08 .mat_img{ left: calc(550 / 1100 * -100%); top:calc(205 / 680 * -100%);}
+.mat_09 .mat_img{ left: calc(790 / 1100 * -100%); top:calc(205 / 680 * -100%);}
+.mat_10 .mat_img{ left: calc(1030 / 1100 * -100%); top:calc(205 / 680 * -100%);}
+
+.mat_11 .mat_img{ left: calc(70 / 1100 * -100%); top:calc(370 / 680 * -100%);}
+.mat_12 .mat_img{ left: calc(310 / 1100 * -100%); top:calc(370 / 680 * -100%);}
+
+/*
 .mat_01 a{background-position: 2% 0;}
 .mat_02 a{background-position: 26% 0;}
 .mat_03 a{background-position: 50% 0;}
@@ -89,5 +131,5 @@
 .mat_07 a{background-position: 26% 23%;}
 .mat_08 a{background-position: 50% 23%;}
 .mat_09 a{background-position: 74% 23%;}
-.mat_10 a{background-position: 98% 23%;}
+.mat_10 a{background-position: 98% 23%;}*/
 
