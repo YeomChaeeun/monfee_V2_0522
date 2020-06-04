@@ -134,20 +134,23 @@
         <fieldset class="user_certi">
           <legend class="hidden">인증 확인</legend>
           <dl>
-            <dt><label for="userOtherMail">휴대전화</label></dt> 
+            <dt><label for="mobileArea">휴대전화</label></dt> 
             <dd class="input_area">
               <div>
-                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+                <select type="tel" name="mobileArea" id="mobileArea" value="">
+                </select>
               </div>
             </dd>
             <dd class="input_area">
               <div>
-                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+                <label for="mobileNumber" class="hidden">휴대전화 번호를 입력</label>
+                <input type="tel" name="mobileNumber" id="mobileNumber" value=""/>
               </div>
             </dd>
             <dd class="input_area">
               <div>
-                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+                <label for="mobileCerti"><span class="hidden">전송된 </span>인증번호를 입력하세요.</label>
+                <input type="tel" name="mobileCerti" id="mobileCerti" class="hidden" value=""/>
               </div>
             </dd>
             <dd class="confirm_text">내용을 입력하세요.</dd>
