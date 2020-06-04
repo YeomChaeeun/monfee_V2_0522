@@ -46,6 +46,11 @@ select {
        -o-appearance:button;
           appearance:button;
 }
+select::-ms-expand{
+  /* display:none; */
+  border: 0;
+  background-color: transparent;
+}
 
 header,article,section,nav,footer,aside,main,
 figure, figcaption {display: block;}

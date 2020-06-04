@@ -19,6 +19,150 @@
 </head>
 <body>
   <!-- layout -->
+  <div id="wrap">
+    <h1><span>회원가입 페이지 만들기</span></h1>
+    <div class="joinBox">
+      <form action="#" method="POST">
+        <fieldset class="user_set">
+          <legend class="hidden">계정 설정</legend>
+          <dl>
+            <dt>
+              <label for="userId">
+                <span class="hidden">사용할 </span>
+                아이디
+                <span class="hidden">를 입력해주세요.</span>
+              </label>
+            </dt>
+            <dd class="input_area">
+              <div>
+                <input type="text" name="userId" id="userId" value="" />
+              </div>
+              <span class="end_icon">@naver.com</span>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+          <dl>
+            <dt><label for="userPw">비밀번호</label></dt>
+            <dd class="input_area">
+              <div>
+                <input type="text" name="userPw" id="userPw" value="" />
+              </div>
+              <strong class="end_icon"><span>사용불가</span><i class="fas fa-lock"></i></strong>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+          <dl>
+            <dt><label for="userPw2">비밀번호 재확인</label></dt> 
+            <dd class="input_area">
+              <div>
+                <input type="text" name="userPw2" id="userPw2" value="" />
+              </div>
+              <strong class="end_icon"><span>사용불가</span><i class="fas fa-lock"></i></strong>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+        </fieldset>
+
+        <fieldset class="user_info">
+          <legend class="hidden">개인 정보</legend>
+          <dl>
+            <dt><label for="userName">이름</label></dt>
+            <dd class="input_area">
+              <div>
+                <input type="text" name="userName" id="userName" value="" />
+              </div>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+          <dl class="birth">
+            <dt><label for="birthYear">생년월일</label></dt> 
+            <dd class="input_area">
+              <div>
+                <input type="text" name="birthYear" id="birthYear" value="" placeholder="년(4자)">
+              </div>
+              <div>
+                <label for="birthMonth" class="hidden">생일 중 월 입력</label>
+                <select name="birthMonth" id="birthMonth">
+                  <option>월</option>
+                  <option value="01">1월</option>
+                  <option value="02">2월</option>
+                  <option value="03">3월</option>
+                  <option value="04">4월</option>
+                  <option value="05">5월</option>
+                  <option value="06">6월</option>
+                  <option value="07">7월</option>
+                  <option value="08">8월</option>
+                  <option value="09">9월</option>
+                  <option value="10">10월</option>
+                  <option value="11">11월</option>
+                  <option value="12">12월</option>
+                </select>
+              </div>
+              <div>
+                <label for="birthDay" class="hidden">생일 중 날짜 입력</label>
+                <input type="text" name="birthDay" id="birthDay" value="" placeholder="일">
+              </div>
+
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+          <dl>
+            <dt><label for="userGender">성별</label></dt> 
+            <dd class="input_area">
+              <div>
+                <select name="userGender" id="userGender">
+                  <option>성별</option>
+                  <option value="female">여성</option>
+                  <option value="male">남성</option>
+                </select>
+              </div>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+          <dl>
+            <dt><label for="userEmail">본인확인 이메일</label></dt> 
+            <dd class="input_area">
+              <div>
+                <input type="email" name="userEmail" id="userEmail" value="" required="required"/>    
+              </div>          
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+
+        </fieldset>
+
+        <fieldset class="user_certi">
+          <legend class="hidden">인증 확인</legend>
+          <dl>
+            <dt><label for="userOtherMail">휴대전화</label></dt> 
+            <dd class="input_area">
+              <div>
+                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+              </div>
+            </dd>
+            <dd class="input_area">
+              <div>
+                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+              </div>
+            </dd>
+            <dd class="input_area">
+              <div>
+                <input type="tel" name="userOtherMail" id="userOtherMail" value=""/>
+              </div>
+            </dd>
+            <dd class="confirm_text">내용을 입력하세요.</dd>
+          </dl>
+        </fieldset>
+
+        <fieldset class="confirm_send">
+          <legend class="hidden">최종 확인 및 전송</legend>
+          <div class="input_area">
+            <input type="submit" name="confirm send btn" value="가입하기"/>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
   
   <!-- script -->
   <script src="../js/base/jquery-3.5.1.min.js"></script>
