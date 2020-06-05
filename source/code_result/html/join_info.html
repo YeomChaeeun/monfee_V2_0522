@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+
+  <link rel="stylesheet" href="../fonts/fontawesome-5/css/all.css">
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/join_info.css">
+
+  <!--[if IE]>
+    <meta src="../ie/html5shiv/dist/html5shive.min.js">
+    <meta src="../ie/pie/PIE.js">
+    <meta src="../ie/respond/dist/respond.min.js">
+  <![endif] -->
+  <title>Document</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1>이용약관 페이지 만들기</h1>
+      <div class="lang_box">
+        <select name="lang" id="lang">
+          <option value="한국어">한국어</option>
+          <option value="eng">english</option>
+          <option value="중국어">중국어</option>
+        </select>     
+      </div> 
+    </header>
+
+    <div id="container">
+      <div id="content">
+        <form id="join_form">
+          <!-- 약관동의 -->
+          <p class="chk_all clearfix">
+            <span>
+              <input type="checkbox" name="chk_all" id="chk_all"/>
+            </span>
+            <label for="chk_all">이용약관, 개인정보 수집 및 이용, 위치정보 이용약관(선택), 프로모션 안내 메일 수신(선택)에 모두 동의합니다.</label>
+          </p>
+          <ul class="chk_box">
+            <li class="chk_list">
+              <span>
+                <input type="checkbox">
+                <label for=""></label>
+              </span>
+              <div class="more_box"></div>
+            </li>
+            <li class="chk_list">
+              <span>
+                <input type="checkbox">
+                <label for=""></label>
+              </span>
+              <div class="more_box"></div>
+            </li>
+            <li class="chk_list">
+              <span>
+                <input type="checkbox">
+                <label for=""></label>
+              </span>
+              <div class="more_box"></div>
+            </li>
+            <li class="chk_list">
+              <span>
+                <input type="checkbox">
+                <label for=""></label>
+              </span>
+              <div class="more_box"></div>
+            </li>
+          </ul>
+          
+
+        </form>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  
+  <!-- script -->
+  <script src="../js/base/jquery-3.5.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <script src="../js/src/join_info.js"></script>
+  
+</body>
+</html>
