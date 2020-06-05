@@ -1,79 +1,106 @@
 /* join_check.css */
 
-#wrap{
-  width: 100%; height: auto;
+
+#wrap {
+  width: 100%; height:auto; min-height:100%;
+  padding:5rem; box-sizing: border-box;
   background-color: #f5f6f7;
 }
-h1{text-align: center; margin-bottom: 50px;}
+h1{
+  text-align: center; margin-bottom:56px;
+}
 
 #formBox{
-  width: 460px; height: auto; margin: auto;
-
+  width: 460px; height:auto;
+  margin:auto;
 }
+
 fieldset{
-  width: 100%; height: auto; 
-  margin-bottom: 25px;
+  width: 100%; height:auto; 
+  margin-bottom:25px;
+}	
+
+input[type="checkbox"] {
+  position: absolute; z-index: -1; top: 0; left: 0; overflow: hidden;
 }
 
-input[type="checkbox"]{position: absolute; z-index: -1; top: 0; left: 0; overflow: hidden;}
 
-.check_area{
-  width: 100%; height: auto; min-height: 28px;
-  font-size: 1rem; color: #333; font-weight: bold;
-  word-break: keep-all;
+
+.check_area {
+  width: 100%; height:auto; min-height:28px;
+  font-size: 1rem; color:#333; font-weight: bold;
+  word-break:keep-all;
+
 }
+
 .check_area label{
   position: relative;
-  width: 100%; height: auto;
-  padding-left: 1.875rem; box-sizing: border-box;
+  display:block; 
+  width: 100%; height:auto;
+  min-height:28px;
+  padding-left:1.875rem;
+  box-sizing: border-box;
 }
-.all_check label{display:block; padding-left: 2rem;}
+
+.all_check label{
+  display: block;
+  padding-left:2rem;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: 1.5rem;
+}
+
 
 .check_area label:before{
-  content: "\f058";
-  position: absolute; left: 0; 
+  content:"\f058"; 
+  position: absolute;	top:0; left: 0; 
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: rgba(51, 51, 51, 0.3);
-}
-.all_check label:before{top:0.5rem; font-size: 1.5rem; }
+  font-weight: 900;	font-size:1.2rem;
+  color:rgba(51,51,51,0.3);
+} 
+.all_check label:before {top:0.5rem; font-size:1.5rem;}
 
-input[type="checkbox"].check + .check_area>label:before{color: #f07; font-weight: bold;}
-input[type="checkbox"]:focus + .check_area>label{outline: 2px dotted #00c850;}
-
-/* .require_check .check_area>label:after{content: "(필수)"; font-size: 0.8rem; color: #070;}
-.option_check .check_area>label:after{content: "(선택)"; font-size: 0.8rem; color: #777;} */
-.require_check .check_area strong{font-weight: normal; font-size: 0.8rem; color: #00c850;}
-.option_check .check_area strong{font-weight: normal; font-size: 0.8rem; color: #8e8e8e;}
-
-.terms{
-	width: 100%; height:90px;
-	overflow: auto;
-	overflow-x: hidden;
-	padding:12px;
-	box-sizing: border-box;
-	border:1px solid #dadada;
-	background-color: #fff;	
-	margin-top:10px;
-	margin-bottom: 26px;
-	font-size:0.875rem;
-	color:#777;
-}
-.terms dl{
-  width: 100%; margin-top: 10px;
-  border-top: 1px solid #777;
-}
-.terms dt{
-  font-size: 1rem;
-  font-weight: bold;
+input[type="checkbox"]:focus + 
+.check_area>label{
+  outline:2px dotted #00c850;
 }
 
+input[type="checkbox"].check + 
+.check_area > label:before{ color:#f07;}
+
+/*
+.require_check .check_area > label:after { content:"(필수)"; font-size:0.8rem; color:#070;} 
+.option_check .check_area > label:after { content:"(선택)"; font-size:0.8rem; color:#777;} 
+*/
+
+.require_check  .check_area  strong { font-weight:normal; font-size:0.8rem; color:#00c850; }
+.option_check  .check_area  strong { font-weight:normal; font-size:0.8rem; color:#8e8e8e; }
 
 
+/*  --------------------------------------------------------------- */
+.terms {
+width: 100%; height:90px;
+overflow: auto;
+overflow-x: hidden;
+padding:12px;
+box-sizing: border-box;
+border:1px solid #dadada;
+background-color: #fff;	
+margin-top:10px;
+margin-bottom: 26px;
+font-size:0.875rem;
+color:#777;
+}
 
-
-
+.terms dl {
+width: 100%; margin-top:10px;
+border-top:1px solid #777;
+}
+.terms dt {
+font-size:.95rem;
+font-weight: bold;
+margin-bottom: 0.3rem;
+}
 
 
 
